@@ -1,0 +1,31 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2xpdmlhIiwiaWF0IjoxNzIzOTc1MjMzLCJleHAiOjE3MjM5NzUyNjN9.j_lZ5JAJnwH4JA6NDq4XJHPPTikzV9XkdJyIoP7R-Qc
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":""
+}
+
+
+
+###
+
+POST http://localhost:4000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoib2xpdmlhIiwiaWF0IjoxNzIzOTc0MDM5fQ.cfALzYF0qoW4dLn2rzHs9r2fSCoa-6_eZLAuZs-xGsk"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username":"olivia"
+}
